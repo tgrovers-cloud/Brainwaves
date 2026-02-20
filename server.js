@@ -1,11 +1,3 @@
-// BrainWaves v0.1 - Session Token Keeper Backend (CommonJS) — Tweaked for smoother app behavior
-// Keeps original logic, but:
-// - normalizes errors to JSON for all /spotify/* + /token
-// - returns explicit invalid_session / token_refresh_failed where possible
-// - adds /session/check helper (non-breaking, optional for app)
-// - removes confusing stray comment about /spotify/queue close
-// - keeps routes + behavior the same otherwise
-
 require("dotenv").config();
 const express = require("express");
 const crypto = require("crypto");
