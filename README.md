@@ -1,31 +1,26 @@
-🎧 BrainWaves
+**🎧 BrainWaves — Spotify DJ Controller**
 
-A Spotify DJ-style controller built with Kotlin, Jetpack Compose, and Node.js
+Android app that controls Spotify playback using a custom DJ-style interface
 
-Overview
+Why this project matters
 
-BrainWaves is an Android app that lets you control Spotify playback using a DJ-inspired interface, similar to a CDJ deck. Users can link their Spotify account, browse presets, search for tracks, queue songs, control playback, and scrub through tracks using a jog wheel.
+This project demonstrates my ability to build a real-world mobile application that integrates with an external API, handles authentication securely, and implements custom UI interactions.
 
-The project focuses on clean architecture, secure authentication, and custom UI interactions.
+**What it does**
 
-Features
+Lets users link their Spotify account
 
-🔐 Spotify OAuth login (secure, backend-handled)
+Play, pause, skip, search, and queue tracks
 
-▶️ Play, pause, skip tracks
+Browse music using presets (e.g. Chill, House, Focus)
 
-🔍 Search for tracks and queue them
+Scrub through a track using a DJ-style jog wheel
 
-🎛️ DJ-style jog wheel for seeking through a song
+Displays live playback position and track info
 
-🎚️ Preset-based browsing (e.g. Chill, House, Focus)
+**Tech Stack**
 
-📊 Real-time playback position and duration
-
-💡 Neon / glass-style UI inspired by CDJ-3000 decks
-
-Tech Stack
-Mobile
+**Frontend (Android)**
 
 Kotlin
 
@@ -33,9 +28,9 @@ Jetpack Compose
 
 Material 3
 
-Coroutines for async work
+Coroutines
 
-Backend
+**Backend**
 
 Node.js
 
@@ -45,40 +40,44 @@ Spotify Web API
 
 OAuth 2.0
 
-In-memory session handling (v1)
-
-Architecture (Simple Explanation)
+**How it works (simple)**
 
 The Android app handles UI and user interaction.
 
-A Node.js backend handles Spotify authentication and API calls.
+A Node.js backend handles Spotify authentication and API requests.
 
-When the user links Spotify:
+Users log in via Spotify; the backend creates a session token.
 
-They log in via Spotify in the browser
+The app sends this token to the backend for all playback actions.
 
-Spotify redirects back with a session token
+Spotify secrets stay on the backend — never in the mobile app.
 
-The app stores the session token locally
+**Key Skills Demonstrated**
 
-The app sends the session token to the backend for all playback actions.
+Mobile development with Kotlin and Compose
 
-The backend refreshes Spotify access tokens and talks to Spotify securely.
+Secure OAuth authentication flows
 
-Why this setup?
+API integration and backend communication
 
-No Spotify secrets live in the mobile app
+Custom touch gestures and animations
 
-Cleaner separation of concerns
+State management and async programming
 
-Easier to scale or swap clients later
+**What I learned**
 
-What I Learned
+How to structure a mobile + backend project
 
-Implementing OAuth flows securely
+How OAuth works in a real production-style flow
 
-Designing custom touch interactions (rotary knobs, jog wheels)
+How to build reusable UI components in Compose
 
-Managing async state between UI and backend
+How to debug API integrations end-to-end
 
-Structuring a real-world mobile + backend project
+**Improvements I’d make next**
+
+Persist sessions instead of in-memory storage
+
+Add better error handling for offline states
+
+Improve test coverage
