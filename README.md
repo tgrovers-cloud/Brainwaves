@@ -1,8 +1,8 @@
 **🎧 BrainWaves — Spotify DJ Controller**
 
-Android app that controls Spotify playback using a custom DJ-style interface
+**Android app that controls Spotify playback using a custom DJ-style interface**
 
-Why this project matters
+**Why this project matters**
 
 This project demonstrates my ability to build a real-world mobile application that integrates with an external API, handles authentication securely, and implements custom UI interactions.
 
