@@ -14,7 +14,7 @@ const APP_REDIRECT_URL = (process.env.APP_REDIRECT_URL || "").trim(); // brainwa
 
 console.log("=== BrainWaves Backend Boot ===");
 console.log("CLIENT_ID:", CLIENT_ID || "(missing)");
-console.log("CLIENT_SECRET:", CLIENT_SECRET ? "loaded ✅" : "(missing)");
+console.log("CLIENT_SECRET:", CLIENT_SECRET ? "loaded" : "(missing)");
 console.log("PUBLIC_BASE_URL:", PUBLIC_BASE_URL || "(missing)");
 console.log("APP_REDIRECT_URL:", APP_REDIRECT_URL || "(missing)");
 console.log("===============================");
